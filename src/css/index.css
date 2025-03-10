@@ -1,0 +1,58 @@
+.main {
+  color: #444444;
+  background-color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background-color: #6FA8DC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  padding-left: 1.5em;
+}
+
+.nombre {
+  font-size: xx-large;
+}
+.nombre h1 {
+  margin: 0;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  margin-right: 3em;
+  border-radius: 1em;
+}
+
+.menu {
+  background-color: #6FA8DC;
+}
+.menu nav {
+  display: flex;
+}
+
+.menu-item {
+  border: 0.1px;
+  border-left-style: outset;
+  border-right-style: outset;
+  border-color: #444444;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
