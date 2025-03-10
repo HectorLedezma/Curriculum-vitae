@@ -1,0 +1,33 @@
+@use 'variables';
+
+.main{
+    color: variables.$font-color-primary;
+    background-color: white;
+    font-family: variables.$font-family;
+}
+
+.header{
+    background-color: variables.$primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    padding-left: 1.5em;
+}
+.nombre{
+    font-size: xx-large;
+    h1{
+        margin: 0;
+    }
+}
+
+img{
+    width: variables.$size-photo;
+    height: variables.$size-photo;
+    margin: 1em;
+    margin-right: 3em;
+    border-radius: 1em;
+}
+
