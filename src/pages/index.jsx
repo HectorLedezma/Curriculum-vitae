@@ -32,12 +32,12 @@ function Index({children}){
                                 locate();
                             }
                         }
-                    ><h3>Perfil</h3></div>
-                    <div className="menu-item"><h3>Educación</h3></div>
-                    <div className="menu-item"><h3>Experiencia</h3></div>
-                    <div className="menu-item"><h3>Contacto</h3></div>
-                    <div className="menu-item"><h3>Enlaces</h3></div>
-                    <div className="menu-item"><h3>Otros datos</h3></div>
+                    >Perfil</div>
+                    <div className="menu-item">Educación</div>
+                    <div className="menu-item">Experiencia</div>
+                    <div className="menu-item">Contacto</div>
+                    <div className="menu-item">Enlaces</div>
+                    <div className="menu-item">Otros datos</div>
                 </nav>
             </div>
             <div>
