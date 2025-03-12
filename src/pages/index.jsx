@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import '../css/index.css'
 import image from '../assets/profile.png'
-import { Outlet, useNavigate } from "react-router";
+import { Outlet, useNavigate, useLocation } from "react-router";
 
 function Index({children}){
+    const location = useLocation();
+    const rutas = ['/','/education','/xp','/contact','/links','/other','/test'];
 
     const [render,setRender] = useState(0);
+
+    useEffect(()=>{
+        let path = location.pathname;
+        let index = rutas.indexOf(path);
+        setRender(index);
+    })
+
+    
 
     const LoadClass = (state)=>{
         if (state === render) {
@@ -15,7 +25,7 @@ function Index({children}){
             return '';
         }
     }
-    
+
     const navi = useNavigate();
 
     const Locate = (link,state) =>{
