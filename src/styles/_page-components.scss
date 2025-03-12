@@ -1,0 +1,30 @@
+@use 'variables';
+$image-size: 200px;
+
+.Profile{
+    background-color: variables.$font-color-primary;
+}
+
+.box{
+    background-color: white;
+    border-radius: 20px;
+    padding: 2em;
+    margin: 3em;
+    display: flex;
+    img{
+        height: $image-size;
+        width: $image-size;
+    }
+}
+
+.box-content{
+    display: flex;
+    align-items: center;
+    font-size: large;
+    text-align: justify;
+}
+
+.box-image-content{
+    display: flex;
+    justify-content: center;
+}

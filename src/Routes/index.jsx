@@ -1,13 +1,17 @@
 import React from "react"
 import { Route, Routes } from "react-router"
 import Index from "../pages"
+import Profile from "../pages/profile"
+import Education from "../pages/education"
+import Xp from "../pages/xperience"
+import Contact from "../pages/contact"
 
 
 function Rutas(){
 
-    const page = (element) =>{
+    const page = (element,state) =>{
         return(
-            <Index>
+            <Index state={state}>
                 {element}
             </Index>
         )
@@ -16,9 +20,18 @@ function Rutas(){
     return(
         <Routes>
             <Route path='/' element={page(
-                <h1>HOLAS XDDD</h1>
+                <Profile/>
             )}/>
-            <Route path='/' element={page(
+            <Route path='/education' element={page(
+                <Education/>
+            )}/>
+            <Route path='/xp' element={page(
+                <Xp/>
+            )}/>
+            <Route path='/contact' element={page(
+                <Contact/>
+            )}/>
+            <Route path='/test' element={page(
                 <h1>HOLAS XDDD</h1>
             )}/>
         </Routes>

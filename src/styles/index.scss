@@ -1,7 +1,17 @@
+@use 'variables';
+
 @use 'header';
 
 @use 'menu';
 
+@use 'page-components';
+
 body{
+    background-color: variables.$font-color-primary;
     margin: 0;
+}
+
+.main{
+    color: variables.$font-color-primary;
+    font-family: variables.$font-family;
 }
