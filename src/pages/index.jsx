@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import '../css/index.css'
 import image from '../assets/profile.png'
-import { Outlet } from "react-router";
+import { Outlet, useNavigate } from "react-router";
 
 function Index({children}){
 
-    //const location = useLocation();
+    const [render,setRender] = useState(0);
 
-    const locate = ()=>{
-        //location.pathname = '/holas'
-        console.log('locating...')
+    const LoadClass = (state)=>{
+        if (state === render) {
+            //setRender(state)
+            return 'selected';
+        }else{
+            return '';
+        }
+    }
+    
+    const navi = useNavigate();
+
+    const Locate = (link,state) =>{
+        setRender(state)
+        navi(link)
     }
 
     return (
@@ -25,19 +36,54 @@ function Index({children}){
             </div>
             <div className="menu">
                 <nav>
-                    <div className="menu-item"
+                    <div className={"menu-item "+LoadClass(0)}
                         onClick={
                             (ev)=>{
                                 ev.preventDefault();
-                                locate();
+                                Locate('/',0)
                             }
                         }
                     >Perfil</div>
-                    <div className="menu-item">Educación</div>
-                    <div className="menu-item">Experiencia</div>
-                    <div className="menu-item">Contacto</div>
-                    <div className="menu-item">Enlaces</div>
-                    <div className="menu-item">Otros datos</div>
+                    <div className={"menu-item "+LoadClass(1)}
+                        onClick={
+                            (ev)=>{
+                                ev.preventDefault();
+                                Locate('/education',1)
+                            }
+                        }
+                    >Educación</div>
+                    <div className={"menu-item "+LoadClass(2)}
+                        onClick={
+                            (ev)=>{
+                                ev.preventDefault();
+                                Locate('/xp',2)
+                            }
+                        }
+                    >Experiencia</div>
+                    <div className={"menu-item "+LoadClass(3)}
+                        onClick={
+                            (ev)=>{
+                                ev.preventDefault();
+                                Locate('/contact',3)
+                            }
+                        }
+                    >Contacto</div>
+                    <div className={"menu-item "+LoadClass(4)}
+                        onClick={
+                            (ev)=>{
+                                ev.preventDefault();
+                                Locate('/links',4)
+                            }
+                        }
+                    >Enlaces</div>
+                    <div className={"menu-item "+LoadClass(5)}
+                        onClick={
+                            (ev)=>{
+                                ev.preventDefault();
+                                Locate('/other',5)
+                            }
+                        }
+                    >Otros datos</div>
                 </nav>
             </div>
             <div>
