@@ -11,20 +11,33 @@ $image-size: 200px;
     padding: 2em;
     margin: 3em;
     display: flex;
+}
+
+.box-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    text-align: justify;
+    width: 100%;
+    padding: 1em;
+}
+
+.box-image-content{
+    display: flex;
+    justify-content: center;
     img{
         height: $image-size;
         width: $image-size;
     }
 }
 
-.box-content{
-    display: flex;
-    align-items: center;
-    font-size: large;
-    text-align: justify;
+.image-content{
+    height: $image-size;
+    width: 100% !important;
 }
 
-.box-image-content{
-    display: flex;
-    justify-content: center;
+.image-content-not-res{
+    height: 100% !important;
+    width: 100% !important;
 }

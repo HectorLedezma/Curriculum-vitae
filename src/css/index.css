@@ -4,6 +4,13 @@
   justify-content: space-between;
   align-items: center;
 }
+.header img {
+  width: 120px;
+  height: 120px;
+  margin: 1em;
+  margin-right: 3em;
+  border-radius: 1em;
+}
 
 .title {
   padding-left: 1.5em;
@@ -14,14 +21,6 @@
 }
 .nombre h1 {
   margin: 0;
-}
-
-img {
-  width: 120px;
-  height: 120px;
-  margin: 1em;
-  margin-right: 3em;
-  border-radius: 1em;
 }
 
 .menu {
@@ -61,21 +60,34 @@ img {
   margin: 3em;
   display: flex;
 }
-.box img {
-  height: 200px;
-  width: 200px;
-}
 
 .box-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: large;
   text-align: justify;
+  width: 100%;
+  padding: 1em;
 }
 
 .box-image-content {
   display: flex;
   justify-content: center;
+}
+.box-image-content img {
+  height: 200px;
+  width: 200px;
+}
+
+.image-content {
+  height: 200px;
+  width: 100% !important;
+}
+
+.image-content-not-res {
+  height: 100% !important;
+  width: 100% !important;
 }
 
 body {
