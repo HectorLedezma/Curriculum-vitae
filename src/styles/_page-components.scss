@@ -41,3 +41,18 @@ $image-size: 200px;
     height: 100% !important;
     width: 100% !important;
 }
+
+.Accordion{
+    color: variables.$font-color-primary;
+    margin-top: .5em;
+}
+
+.Accordion-Details{
+    font-size: small;
+    ul{
+        padding: .5em;
+        li{
+            margin-bottom: .5em;
+        }
+    }
+}
