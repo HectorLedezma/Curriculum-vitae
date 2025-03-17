@@ -5,7 +5,7 @@ import { Outlet, useNavigate, useLocation } from "react-router";
 
 function Index({children}){
     const location = useLocation();
-    const rutas = ['/','/education','/xp','/contact','/links','/other','/test'];
+    const rutas = ['/','/person','/education','/xp','/contact','/links','/other','/test'];
 
     const [render,setRender] = useState(0);
 
@@ -58,39 +58,47 @@ function Index({children}){
                         onClick={
                             (ev)=>{
                                 ev.preventDefault();
-                                Locate('/education',1)
+                                Locate('/person',1)
                             }
                         }
-                    >Educación</div>
+                    >Datos personales</div>
                     <div className={"menu-item "+LoadClass(2)}
                         onClick={
                             (ev)=>{
                                 ev.preventDefault();
-                                Locate('/xp',2)
+                                Locate('/education',2)
                             }
                         }
-                    >Experiencia</div>
+                    >Educación</div>
                     <div className={"menu-item "+LoadClass(3)}
                         onClick={
                             (ev)=>{
                                 ev.preventDefault();
-                                Locate('/contact',3)
+                                Locate('/xp',3)
                             }
                         }
-                    >Contacto</div>
+                    >Experiencia</div>
                     <div className={"menu-item "+LoadClass(4)}
                         onClick={
                             (ev)=>{
                                 ev.preventDefault();
-                                Locate('/links',4)
+                                Locate('/contact',4)
                             }
                         }
-                    >Enlaces</div>
+                    >Contacto</div>
                     <div className={"menu-item "+LoadClass(5)}
                         onClick={
                             (ev)=>{
                                 ev.preventDefault();
-                                Locate('/other',5)
+                                Locate('/links',5)
+                            }
+                        }
+                    >Enlaces</div>
+                    <div className={"menu-item "+LoadClass(6)}
+                        onClick={
+                            (ev)=>{
+                                ev.preventDefault();
+                                Locate('/other',6)
                             }
                         }
                     >Otros datos</div>

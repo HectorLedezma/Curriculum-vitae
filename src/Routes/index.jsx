@@ -5,6 +5,7 @@ import Profile from "../pages/profile"
 import Education from "../pages/education"
 import Xp from "../pages/xperience"
 import Contact from "../pages/contact"
+import MySelf from "../pages/my-self"
 
 
 function Rutas(){
@@ -21,6 +22,9 @@ function Rutas(){
         <Routes>
             <Route path='/' element={page(
                 <Profile/>
+            )}/>
+            <Route path='/person' element={page(
+                <MySelf/>
             )}/>
             <Route path='/education' element={page(
                 <Education/>
