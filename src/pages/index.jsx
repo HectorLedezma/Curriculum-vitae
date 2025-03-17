@@ -5,6 +5,7 @@ import { Outlet, useNavigate, useLocation } from "react-router";
 
 function Index({children}){
     const location = useLocation();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const rutas = ['/','/person','/education','/xp','/contact','/links','/other','/test'];
 
     const [render,setRender] = useState(0);
@@ -13,7 +14,7 @@ function Index({children}){
         let path = location.pathname;
         let index = rutas.indexOf(path);
         setRender(index);
-    })
+    }, [location.pathname, rutas])
 
     
 
