@@ -13,7 +13,7 @@ function Profile(){
                 </div>
                 <div className="box-content">
                     <p>
-                        Gran sentido de responsabilidad, capacidad inventiva y de rapido aprendizaje autodidacta.
+                        Alta dedicación a la programación, gran sentido de responsabilidad, capacidad de ofrecer ideas de solución a problemas de forma inmediata, de organizar ideas y administrar tiempos y de aprendizaje autodidacta.
                     </p>
                 </div>
             </div>
