@@ -90,19 +90,14 @@ function Other(){
                                 <p style={{fontWeight:"bold",marginRight:".5em"}}>
                                     Pretensiones de renta liquida mensual:
                                 </p>
-                                <p>$800.000 - $1.000.000 CLP</p>
+                                <p>$500.000 - $700.000 CLP (Full-time)</p>
+                                <p>$250.000 - $350.000 CLP (Part-time)</p>
                             </li>
                             <li>
                                 <p style={{fontWeight:"bold",marginRight:".5em"}}>
                                     Disponibilidad para inicial:
                                 </p>
                                 <p>Lo mas pronto posible</p>
-                            </li>
-                            <li>
-                                <p style={{fontWeight:"bold",marginRight:".5em"}}>
-                                    Pretension de horario:
-                                </p>
-                                <p>Jornada Completa</p>
                             </li>
                         </ul>
                     </div>
