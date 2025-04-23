@@ -201,6 +201,22 @@ function Xp(){
                     </div>
                 </div>
             </div>
+            <div className="box">
+                <div className="box-content">
+                    <div>
+                        <div className="box-image-content">
+                            <a style={{width:"100%", marginRight:"1.5em"}} href="https://www.linkedin.com/in/hector-ledezma-rodriguez-b858b5229/recent-activity/all/">
+                                <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="logo2" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="box-content">
+                    <div> 
+                        <p style={{fontWeight:"bold"}}>Otros proyectos en mi perfil de LinkedIn.<br /></p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
